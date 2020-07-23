@@ -1,4 +1,4 @@
-import { GET_TACO, SUCCESS_GET_TACO } from './types';
+import { GET_TACO, SUCCESS_GET_TACO, TOGGLE_THEME } from './types';
 
 const getTaco = () => ({
   type: GET_TACO
@@ -10,6 +10,10 @@ const getTaco = () => ({
 const successGetTaco = (payload) => ({
   type: SUCCESS_GET_TACO,
   payload
+})
+
+export const toggleTheme = () => ({
+  type: TOGGLE_THEME
 })
 
 
