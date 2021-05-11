@@ -8,7 +8,7 @@ const defaultState = {
 // Reducers solo es la siguiente función pura
 // Que se encarga de establecer o modificar el estado general
 // Dependiendo de los indicadores que se mandan a ejecutar
-export default (state = defaultState, action) => {
+function index (state = defaultState, action) {
   switch (action.type) {
     case SUCCESS_GET_TACO:
       return {
@@ -25,3 +25,5 @@ export default (state = defaultState, action) => {
       return state
   }
 }
+
+export default index;
